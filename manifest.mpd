@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- MPD file Generated with GPAC version 2.1-DEV-rev466-g45e0751e-master at 2023-03-11T08:36:46.388Z -->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" minBufferTime="PT1.500S" type="static" mediaPresentationDuration="PT0H1M52.576S" maxSubsegmentDuration="PT0H0M11.250S" profiles="urn:mpeg:dash:profile:full:2011">
+ <ProgramInformation moreInformationURL="http://gpac.io">
+  <Title>IKLAN</Title>
+ </ProgramInformation>
+
+ <Period duration="PT0H1M52.576S">
+  <AdaptationSet segmentAlignment="true" lang="eng" startWithSAP="1" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+   <Representation id="1" mimeType="audio/mp4" codecs="mp4a.40.2" audioSamplingRate="48000" bandwidth="131757">
+    <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+    <BaseURL>input_audio_128k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="902-1089">
+     <Initialization range="0-873"/>
+    </SegmentBase>
+   </Representation>
+  </AdaptationSet>
+  <AdaptationSet maxWidth="1280" maxHeight="720" maxFrameRate="24" par="16:9" lang="eng" startWithSAP="1" subsegmentStartsWithSAP="1">
+   <Representation id="2" mimeType="video/mp4" codecs="avc1.64001E" width="640" height="360" frameRate="24" sar="1:1" bandwidth="1097250">
+    <BaseURL>input_video_640x360_1000k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="984-1171">
+     <Initialization range="0-955"/>
+    </SegmentBase>
+   </Representation>
+   <Representation id="3" mimeType="video/mp4" codecs="avc1.64001F" width="1280" height="720" frameRate="24" sar="1:1" bandwidth="1649461">
+    <BaseURL>input_video_1280x720_1500k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="982-1169">
+     <Initialization range="0-953"/>
+    </SegmentBase>
+   </Representation>
+  </AdaptationSet>
+ </Period>
+</MPD>
